@@ -11,7 +11,7 @@ env:
   REGISTRY: ghcr.io
   # Name for the Docker image that this workflow builds.
   # Can be ${{ github.repository }} if we want to use the name of the repository.
-  IMAGE_NAME: tony/test-image
+  IMAGE_NAME: ${{ github.repository }}
 
 # The jobs that the workflow will run.
 jobs:
